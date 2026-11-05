@@ -1,0 +1,25 @@
+# Спам от конкретных модов.
+# Все шаблоны привязаны к началу сообщения (^), чтобы не задеть обычный чат:
+# сообщение игрока начинается с "<ник> ", а не с этих фраз.
+# Группа: builtin-mod-spam.
+# Отключить целиком: /chatfilters toggle builtin-mod-spam false
+#
+# Yuushya: уведомление о бесплатном распространении ресурсов.
+# Если мод отправляет весь блок одним сообщением, достаточно первого шаблона.
+^\[Notice\] All Yuushya series works \(including Yuushya Resource Pack
+^All official resources can be obtained from our website: https://yuushya\.com/townscape
+^The official website also provides free downloads of integrated packs
+^If you have purchased the above content through any other channels \(such as e-commerce platforms
+^We strongly recommend that you:\s*$
+^① Immediately request a refund from the seller;\s*$
+^② Re-download all official resources from our website;\s*$
+^③ Report the unauthorized selling links through official channels
+^Thank you for your support and understanding of the Yuushya series\. Let's work together
+#
+# TabChannel: сообщение о несинхронизированных каналах.
+^(?:\[TabChannel\]\s*)?(?:TabChannel\s+)?tabs unavailable: server did not sync channels\.
+^(?:\[TabChannel\]\s*)?On Youer/NeoForge, put the NeoForge TabChannel jar in server/mods
+^(?:\[TabChannel\]\s*)?Fabric client = stream chat OK; channels need NeoForge client \+ server\.
+#
+# Axiom: конфликт кейбинда редактора.
+^\[Axiom\] The Editor UI keybind has conflicts:

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "zvezdochkin-filters",
+  "version": "${version}",
+  "name": "Zvezdochkin Filters",
+  "description": "Клиентский фильтр чата по regex-спискам. Порт Fokuso для Minecraft 1.21.1.",
+  "authors": [
+    "zvezdochkin"
+  ],
+  "contributors": [
+    "QazCetelic",
+    "RazrCraft"
+  ],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/zvezdochkin-filters/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.zvezdochkin.filters.client.ZvezdochkinFiltersClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "zvezdochkin-filters.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": ">=0.116.0+1.21.1",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  }
+}

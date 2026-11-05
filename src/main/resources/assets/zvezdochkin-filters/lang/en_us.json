@@ -1,0 +1,7 @@
+{
+  "command.zvezdochkin-filters.list.empty": "No filter lists loaded",
+  "command.zvezdochkin-filters.reload": "Loaded %s filter lists",
+  "command.zvezdochkin-filters.toggle.unknown": "Unknown filter list: %s",
+  "command.zvezdochkin-filters.toggle.on": "Filter list %s is now enabled",
+  "command.zvezdochkin-filters.toggle.off": "Filter list %s is now disabled"
+}
