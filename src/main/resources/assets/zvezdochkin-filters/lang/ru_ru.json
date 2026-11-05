@@ -1,0 +1,7 @@
+{
+  "command.zvezdochkin-filters.list.empty": "Списки фильтров не загружены",
+  "command.zvezdochkin-filters.reload": "Загружено списков фильтров: %s",
+  "command.zvezdochkin-filters.toggle.unknown": "Неизвестный список фильтров: %s",
+  "command.zvezdochkin-filters.toggle.on": "Список фильтров %s включён",
+  "command.zvezdochkin-filters.toggle.off": "Список фильтров %s выключен"
+}
