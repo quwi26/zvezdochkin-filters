@@ -67,7 +67,7 @@ Mojang-маппинги и API 1.21.1.
 ./gradlew build
 ```
 
-Готовый jar - `build/libs/zvezdochkin-filters-1.0.0.jar`.
+Готовый jar - `build/libs/zvezdochkin-filters-1.0.1.jar`.
 
 ## Лицензия
 

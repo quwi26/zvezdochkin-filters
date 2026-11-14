@@ -4,6 +4,7 @@
  */
 package ru.zvezdochkin.filters.client;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import org.slf4j.Logger;
@@ -81,7 +82,10 @@ public final class ChatFilterSystem {
             return false;
         }
 
-        String text = message.getString();
+        // Переводимые строки могут содержать §-коды прямо в тексте перевода
+        // (так делает, например, TabChannel): getString() их не убирает, и
+        // шаблон с ^ перестаёт совпадать. Сравниваем видимый текст.
+        String text = ChatFormatting.stripFormatting(message.getString());
         for (ChatFilterGroup group : getGroups()) {
             if (group.matches(text)) {
                 LOGGER.debug("Скрыто сообщение: {}", text);
